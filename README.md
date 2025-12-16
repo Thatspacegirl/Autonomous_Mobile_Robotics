@@ -44,16 +44,6 @@ SciPy
 Matplotlib
 ```
 
-### Setup
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/ackermann-steering-control.git
-cd ackermann-steering-control
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
 ## Usage
 
 ### Basic Simulation
