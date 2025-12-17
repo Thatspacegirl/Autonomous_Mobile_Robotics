@@ -144,32 +144,6 @@ Search algorithm features:
 - **Optimality**: Guaranteed with admissible heuristic
 - **Post-processing**: Path smoothing and waypoint optimization
 
-## Project Structure
-
-```
-ackermann-steering-control/
-├── src/
-│   ├── vehicle.py          # Vehicle models (kinematics & dynamics)
-│   ├── controllers.py      # PID and LQR implementations
-│   ├── planner.py          # A* path planning algorithm
-│   ├── utils.py            # Helper functions and utilities
-│   └── visualization.py    # Plotting and animation tools
-├── examples/
-│   ├── pid_tracking.py
-│   ├── lqr_tracking.py
-│   ├── astar_planning.py
-│   └── full_demo.py
-├── tests/
-│   ├── test_kinematics.py
-│   ├── test_controllers.py
-│   └── test_planner.py
-├── config/
-│   └── vehicle_params.yaml
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
-
 ## Configuration
 
 Vehicle parameters can be configured in `config/vehicle_params.yaml`:
