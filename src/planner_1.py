@@ -1,15 +1,4 @@
-#!/usr/bin/env python3
-"""
-ALL-IN-ONE: Complete Hybrid A* Motion Planner Analysis
 
-Single file with everything:
-- Analysis tools
-- Validation tests  
-- Visualizations
-- Dashboard generation
-
-Usage: python hybrid_astar_complete_analysis.py
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -20,9 +9,6 @@ import time
 from typing import List, Tuple, Dict, Optional
 
 
-# ============================================================================
-# PLANNER COMPONENTS (from your original code)
-# ============================================================================
 
 @dataclass
 class KinematicBicycle:
@@ -225,9 +211,6 @@ def hybrid_astar_instrumented(
     return None, stats
 
 
-# ============================================================================
-# ANALYSIS TOOLS
-# ============================================================================
 
 class PathAnalyzer:
     """Analyze path quality."""
@@ -346,10 +329,6 @@ class ScenarioGenerator:
         return {'name': 'Narrow Passage', 'grid': grid, 'start': start, 'goal': goal,
                 'expected_success': True}
 
-
-# ============================================================================
-# VISUALIZATION
-# ============================================================================
 
 def create_comprehensive_dashboard(test_results, example_paths):
     """Create single comprehensive dashboard."""
@@ -511,9 +490,6 @@ def create_comprehensive_dashboard(test_results, example_paths):
     return fig
 
 
-# ============================================================================
-# MAIN ANALYSIS
-# ============================================================================
 
 def main():
     """Run complete analysis."""
@@ -528,9 +504,7 @@ def main():
     print("\nEstimated time: 10-20 seconds")
     print("="*70 + "\n")
     
-    # ==================
-    # RUN TESTS
-    # ==================
+   
     print("[1/2] Running validation tests...\n")
     
     scenarios = [
@@ -587,17 +561,12 @@ def main():
     
     print(f"\n  Tests passed: {passed}/{total} ({passed/total*100:.0f}%)")
     
-    # ==================
-    # VISUALIZATION
-    # ==================
+
     print("\n[2/2] Generating dashboard...")
     
     fig = create_comprehensive_dashboard(test_results, example_paths)
     plt.close(fig)
-    
-    # ==================
-    # FINAL SUMMARY
-    # ==================
+
     print("\n" + "="*70)
     print(" ANALYSIS COMPLETE")
     print("="*70)
@@ -659,4 +628,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n\n❌ Error: {e}")
         import traceback
+
         traceback.print_exc()

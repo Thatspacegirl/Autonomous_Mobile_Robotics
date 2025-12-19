@@ -1,16 +1,4 @@
-#!/usr/bin/env python3
-"""
-Comprehensive Analysis for Hybrid A* Motion Planner
 
-This module analyzes the performance and properties of the Hybrid A* planner:
-1. Completeness analysis (resolution completeness)
-2. Optimality analysis (path quality, sub-optimality)
-3. Computational efficiency (time, iterations, memory)
-4. Path quality metrics (smoothness, curvature, length)
-5. Parameter sensitivity analysis
-6. Collision detection validation
-7. Success rate across scenarios
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -20,10 +8,6 @@ from typing import List, Tuple, Dict, Optional
 import warnings
 warnings.filterwarnings('ignore')
 
-
-# =====================
-# Path Quality Metrics
-# =====================
 
 class PathAnalyzer:
     """Analyze path quality and characteristics."""
@@ -698,4 +682,5 @@ if __name__ == "__main__":
     print("  - PathAnalyzer: Analyze path quality")
     print("  - HybridAStarAnalyzer: Comprehensive planner analysis")
     print("  - HeuristicAnalyzer: Heuristic effectiveness")
+
     print("  - PlannerVisualizer: Visualization tools")

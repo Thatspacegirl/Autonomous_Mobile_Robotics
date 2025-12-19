@@ -1,14 +1,4 @@
-#!/usr/bin/env python3
-"""
-Comprehensive Testing and Validation Suite for Hybrid A* Motion Planner
 
-This script performs extensive testing including:
-- Scenario-based testing (simple, cluttered, narrow passages)
-- Parameter sensitivity validation
-- Collision detection verification
-- Completeness and optimality checks
-- Computational performance benchmarks
-"""
 
 import numpy as np
 import time
@@ -16,8 +6,6 @@ from typing import List, Tuple, Dict
 import heapq
 from dataclasses import dataclass
 
-
-# Import the original planner components
 @dataclass
 class KinematicBicycle:
     L: float
@@ -684,4 +672,5 @@ if __name__ == "__main__":
     tester = HybridAStarTester()
     results = tester.run_all_tests()
     
+
     print("✅ Validation complete!")
