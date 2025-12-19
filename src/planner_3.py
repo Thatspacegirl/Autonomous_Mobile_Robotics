@@ -1,15 +1,4 @@
-#!/usr/bin/env python3
-"""
-DYNAMIC OBSTACLE AVOIDANCE - Hybrid A* with Moving Obstacles
 
-Features:
-- Moving obstacles with various patterns (linear, circular, bouncing)
-- Space-time planning (predicts future collisions)
-- Real-time visualization showing dynamic avoidance
-- Interactive animation showing robot navigating moving obstacles
-
-Usage: python dynamic_obstacle_avoidance.py
-"""
 
 import numpy as np
 import matplotlib
@@ -23,16 +12,11 @@ from dataclasses import dataclass
 import time
 from typing import List, Tuple, Dict, Optional
 
-# ============================================================================
-# ANIMATION SETTINGS (customize as needed)
-# ============================================================================
+
 ANIMATION_FPS = 20      # Frames per second
-ANIMATION_SPEED = 100   # milliseconds per frame (lower = faster)
+ANIMATION_SPEED = 100   # 
 
 
-# ============================================================================
-# MOVING OBSTACLE CLASS
-# ============================================================================
 
 class MovingObstacle:
     """Represents a moving obstacle with position and velocity."""
@@ -110,9 +94,7 @@ class MovingObstacle:
             return self.vx, self.vy
 
 
-# ============================================================================
-# KINEMATIC BICYCLE
-# ============================================================================
+
 
 @dataclass
 class KinematicBicycle:
@@ -128,9 +110,6 @@ class KinematicBicycle:
         return x_new, y_new, psi_new
 
 
-# ============================================================================
-# DYNAMIC GRID (considers time)
-# ============================================================================
 
 class DynamicGridWorld:
     """Grid world with moving obstacles."""
@@ -897,4 +876,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n\n❌ Error: {e}")
         import traceback
+
         traceback.print_exc()
