@@ -2,19 +2,9 @@
 
 Complete stability analysis, testing, and validation suite for the LQR (Linear Quadratic Regulator) steering controller with guaranteed optimality and robustness properties.
 
-## 📦 Package Contents
 
-```
-.
-├── LQR_ANALYSIS_README.md         # This file
-├── LQR_STABILITY_GUIDE.md         # Comprehensive theoretical guide
-├── lqr_stability_analysis.py      # Core stability analysis tools
-├── lqr_validation_tests.py        # Comprehensive testing suite
-├── run_lqr_analysis.py            # Master script (run this first!)
-└── [your_lqr_code].py             # Your original LQR tracking code
-```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Run Complete Analysis (Recommended)
 ```bash
