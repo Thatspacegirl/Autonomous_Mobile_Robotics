@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -6,9 +6,6 @@ from dataclasses import dataclass
 import heapq
 from scipy.linalg import solve_continuous_are
 
-# ============================================================
-# Helpers and base model
-# ============================================================
 
 def wrap_angle(a: float) -> float:
     return (a + np.pi) % (2 * np.pi) - np.pi
@@ -532,3 +529,4 @@ if __name__ == "__main__":
     fig.suptitle("Search-based (Hybrid A*) plan tracking — Separate PID vs LQR plots", fontsize=14)
     plt.tight_layout()
     plt.show()
+
