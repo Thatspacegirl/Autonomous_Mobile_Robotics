@@ -418,6 +418,4 @@ This is a research and educational project. For safety-critical autonomous vehic
   <b>🚗 Autonomous Navigation | 🎯 Optimal Control | 🗺️ Path Planning</b>
 </p>
 
-<p align="center">
-  Made with 🤖 for autonomous robotics research
-</p>
+
