@@ -253,13 +253,12 @@ Tested on identical path-tracking tasks:
 
 For complete mathematical derivations, algorithms, and implementation details:
 
-📄 **[Complete System Documentation](docs/SYSTEM_README.md)**
 - Full kinematic and dynamic models
 - Control theory and stability analysis
 - Path planning algorithms explained
 - Performance benchmarks
 
-📄 **[Additional Documentation](docs/)**
+📄 **[Additional Documentation]**
 - Algorithm explanations
 - Implementation notes
 - Configuration guides
