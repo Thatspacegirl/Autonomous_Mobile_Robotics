@@ -1,11 +1,9 @@
-#!/usr/bin/env python3
+
 import numpy as np
 import heapq
 from dataclasses import dataclass
 
-# ==============================
-# Kinematic bicycle model
-# ==============================
+
 
 @dataclass
 class KinematicBicycle:
@@ -22,9 +20,6 @@ class KinematicBicycle:
         return x_new, y_new, psi_new
 
 
-# ==============================
-# Grid + obstacles
-# ==============================
 
 class GridWorld:
     def __init__(self, x_min, x_max, y_min, y_max, resolution=0.5):
@@ -260,3 +255,4 @@ if __name__ == "__main__":
         ax.legend()
         ax.set_title("Search-based Ackermann Planning (Hybrid-A*-like)")
         plt.show()
+
