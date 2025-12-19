@@ -1,15 +1,4 @@
-#!/usr/bin/env python3
-"""
-ENHANCED: Hybrid A* with Multiple Obstacle Avoidance + Visualization
 
-Features:
-- Multiple complex obstacle scenarios
-- Rich visualization showing obstacle avoidance
-- Animated path following
-- Detailed analysis dashboard
-
-Usage: python hybrid_astar_multi_obstacle_viz.py
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,9 +11,6 @@ import time
 from typing import List, Tuple, Dict, Optional
 
 
-# ============================================================================
-# PLANNER COMPONENTS
-# ============================================================================
 
 @dataclass
 class KinematicBicycle:
@@ -228,10 +214,6 @@ def hybrid_astar_instrumented(
     }
     return None, stats
 
-
-# ============================================================================
-# MULTI-OBSTACLE SCENARIOS
-# ============================================================================
 
 class ScenarioGenerator:
     """Generate challenging multi-obstacle scenarios."""
@@ -669,4 +651,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n\n❌ Error: {e}")
         import traceback
+
         traceback.print_exc()
